@@ -13,6 +13,7 @@ public class BinaryTree{
 
     }
    static class BiTree{
+       
         static int idx = -1;
         public static Node buildTree(int nodes[]){
             idx++;
