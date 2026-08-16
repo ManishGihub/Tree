@@ -44,5 +44,6 @@ public class PreOrderTraversal{
         preOrder(root);
     }
 }
+
 // 1
 // 1 2 4 5 3 6 
