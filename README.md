@@ -1,14 +1,15 @@
-🌳 Binary Tree in Java
+## 🌳 Binary Tree in Java
 
 A collection of Binary Tree implementations and practice problems in Java, covering tree construction, traversals, height, node counting, diameter, level-order operations, and subtree checking.
 
 This repository is intended for learning Data Structures & Algorithms (DSA) and understanding how common Binary Tree problems can be implemented using Java.
 
-📌 About the Repository
+## 📌 About the Repository
 
 This repository contains simple and beginner-friendly Java implementations of common Binary Tree concepts and problems.
 
-Topics Covered
+## Topics Covered
+
 🌱 Creating and building Binary Trees
 🔄 Tree Traversals
 📊 Calculating tree height
@@ -21,7 +22,7 @@ Topics Covered
 
 The code is written with readability and learning in mind.
 
-🌳 Binary Tree Used in Examples
+## 🌳 Binary Tree Used in Examples
 
 Most examples use the following Binary Tree:
 
@@ -58,55 +59,55 @@ int nodes[] = {
 
 The repository demonstrates the three fundamental Depth First Search (DFS) traversals and Breadth First Search (BFS).
 
-1. Preorder Traversal
+## 1. Preorder Traversal
 
-Order:
+## Order:
 ```
 Root → Left → Right
 ```
 
-Output:
+## Output:
 ```
 1 2 4 5 3 6
 ```
 
-Implemented in:
+## Implemented in:
 ```
 PreOrderTraversal.java
 ```
-2. Inorder Traversal
+## 2. Inorder Traversal
 
-Order:
+## Order:
 ```
 Left → Root → Right
 ```
 
-Output:
+## Output:
 ```
 4 2 5 1 3 6
 ```
 
-Implemented in:
+## Implemented in:
 ```
 InOrderTraversal.java
 ```
-3. Postorder Traversal
+## 3. Postorder Traversal
 
-Order:
+## Order:
 ```
 Left → Right → Root
 ```
 
-Output:
+## Output:
 ```
 4 5 2 6 3 1
 ```
 
-Implemented in:
+## Implemented in:
 ```
 PostOrderTraversal.java
 ```
-4. Level Order Traversal
+## 4. Level Order Traversal
 
 Level Order Traversal visits nodes level by level using a Queue.
 
@@ -117,18 +118,18 @@ Level Order Traversal visits nodes level by level using a Queue.
     4   5   6
 
 
-Output:
+## Output:
 ```
 1
 2 3
 4 5 6
 ```
 
-Implemented in:
+## Implemented in:
 ```
 LevelOrderTraversal.java
 ```
-📏 Tree Height
+## 📏 Tree Height
 
 TreeHeight.java calculates the height of a Binary Tree recursively.
 
@@ -140,38 +141,40 @@ For the example tree:
         / \     \
        4   5     6
 
-Height
+## Height
 ```
 3
 ```
-Complexity
+## Complexity
 Time: O(n)
 Space: O(h), where h is the height of the tree due to recursion.
-🔢 Count Nodes
+## 🔢 Count Nodes
 
 CountNodes.java calculates the total number of nodes in the Binary Tree.
 
-For the example tree:
-
+## For the example tree:
+```
 Total Nodes = 6
-
-Recursive Idea
+```
+## Recursive Idea
 ```
 count(root)
     = count(left subtree)
     + count(right subtree)
     + 1
 ```
-Complexity
+## Complexity
+
 Time: O(n)
 Space: O(h)
-📏 Diameter of Binary Tree
+
+## 📏 Diameter of Binary Tree
 
 The repository contains two approaches for finding the diameter of a Binary Tree.
 
-1. Basic O(n²) Approach
+## 1. Basic O(n²) Approach
 
-Implemented in:
+## Implemented in:
 ```
 DiameterOfTreeOn2.java
 ```
@@ -180,7 +183,7 @@ This approach repeatedly calculates the height of subtrees while finding the dia
 
 Time Complexity: O(n²) in the worst case.
 
-2. Optimized O(n) Approach
+## 2. Optimized O(n) Approach
 
 Implemented in:
 ```
@@ -193,21 +196,21 @@ Time Complexity: O(n)
 
 This provides a useful comparison between a straightforward recursive solution and an optimized solution.
 
-➕ Sum of Nodes at a Level
+## ➕ Sum of Nodes at a Level
 
 SumOfLevel.java calculates the sum of all nodes present at a specified level using Level Order Traversal.
 
-Example
+## Example
 ```
 Level 1 → 1
 Level 2 → 2 + 3 = 5
 Level 3 → 4 + 5 + 6 = 15
 ```
-Example Output
+## Example Output
 ```
 Sum of level 3 = 15
 ```
-🌿 Subtree of Another Tree
+## 🌿 Subtree of Another Tree
 
 IsSubtree.java contains a solution for the LeetCode "Subtree of Another Tree" problem.
 
@@ -215,7 +218,8 @@ The solution uses two recursive methods:
 
 isIdentical() — checks whether two trees are structurally identical and contain the same values.
 isSubtree() — searches the main tree for a matching subtree.
-🧠 Concepts Practiced
+
+## 🧠 Concepts Practiced
 ```
 Binary Trees
 ├── Node Creation
@@ -232,35 +236,35 @@ Binary Trees
 ├── Level-Based Calculations
 └── Subtree Checking
 ```
-🛠️ Technologies Used
+## 🛠️ Technologies Used
 ☕ Java
 🌳 Binary Tree Data Structure
 🔁 Recursion
 📦 Java Collections
 🧠 Data Structures & Algorithms
 ▶️ How to Run
-1. Clone the Repository
+## 1. Clone the Repository
 ```
 git clone https://github.com/<your-username>/tree.git
 ```
-2. Navigate to the Repository
+## 2. Navigate to the Repository
 ```
 cd tree
 ```
-3. Compile a Java File
+## 3. Compile a Java File
 
-For example:
+## For example:
 ```
 javac TreeHeight.java
 ```
-4. Run the Program
+## 4. Run the Program
 ```
 java TreeHeight
 ```
 
 You can similarly compile and run any of the Java files individually.
 
-📁 Project Structure
+## 📁 Project Structure
 tree/
 │
 ├── BinaryTree.java
@@ -277,11 +281,11 @@ tree/
 │
 └── README.md
 
-🎯 Learning Goals
+## 🎯 Learning Goals
 
 This repository is part of my journey to strengthen my understanding of Data Structures and Algorithms using Java.
 
-The main goals are to:
+## The main goals are to:
 
 Understand Binary Tree fundamentals
 Improve recursive problem-solving skills
@@ -290,11 +294,11 @@ Analyze time and space complexity
 Compare brute-force and optimized approaches
 Build a strong foundation for solving DSA problems
 
-🚀 Future Additions
+## 🚀 Future Additions
 
 More Binary Tree problems and concepts can be added over time, such as:
 
-🔍 Search in Binary Tree
+## 🔍 Search in Binary Tree
 ➕ Sum of all nodes
 🍃 Count leaf nodes
 🪞 Mirror / Invert Binary Tree
@@ -307,7 +311,7 @@ More Binary Tree problems and concepts can be added over time, such as:
 ➕ BST insertion and deletion
 ⚖️ Balanced Binary Tree
 🧩 More LeetCode problems
-🤝 Contributions
+## 🤝 Contributions
 
 This repository is primarily for learning and practice.
 
@@ -317,13 +321,13 @@ If you find a bug or have a more efficient solution, feel free to:
 
 Open an Issue
 Submit a Pull Request
-⭐ Support
+## ⭐ Support
 
 If you find this repository useful for learning Binary Trees and Java DSA, consider giving it a ⭐.
 
 Keep learning. Keep coding. Keep growing. 🌱
 
-👨‍💻 Author
+## 👨‍💻 Author
 
 Manish
 
